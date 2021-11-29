@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cytes_ctf</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        body { 
+           margin-top: 200px;
+           text-align: center;
+           font-family: sans-serif;
+           background-color: burlywood;
+
+        }
+
+        .container{
+             height: 50vh;
+             width: 40vw;
+             border: 3px ;
+             margin: auto;
+             border-radius: 50px;
+             box-shadow:  -20px 20px 60px #bd9c73,
+             20px -20px 60px #ffd49b;
+             padding: 10px;
+        }
+        
+        .label .holder{
+            width: 20vw;
+            height: 7vh;
+            font-size: 20px;
+            margin-top: 20px;
+            border: none;
+            outline: none;
+            border-bottom: 2px white solid;
+            background-color:burlywood ;
+            color: white;
+        }
+        .text{
+            color: white;
+            font-weight: bold;
+            font-size: larger;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .auto{
+            height: 7vh;
+            width:6vw;
+            border-bottom: 2px solid black;
+            border-radius: 7px;
+            
+            background-color: burlywood;
+            color: white;
+        }
+        .auto:hover{
+            background-color:white;
+            color: black
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="label">
+        <form action="input.php">
+            <br><br><label for="fname" class="text">Enter your Name</label><br><br>
+             <input type="text" id="password" name="password" class="holder" placeholder="Name"><br><br>
+             <button class = 'auto' onclick="check(document.getElementById('password').value)">submit</button>
+        </form>
+    </div>
+    </div>
+    <script type="">
+        function value(hi) { 
+			return hi.split("").reverse().join("")
+		}
+		function check(val){
+			if (val == "RickRolls") {				
+				alert("/" + atob(value("=42bpR3YuVnZ")) +".html "+ "flag is not here")
+			}
+		}
+    </script>
+</body>
+</html>
