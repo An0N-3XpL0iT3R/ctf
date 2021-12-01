@@ -1,5 +1,4 @@
- <script type="">
-        function value(hi) { 
+       function value(hi) { 
 			return hi.split("").reverse().join("")
 		}
 		function check(val){
@@ -7,4 +6,3 @@
 				alert("/" + atob(value("=42bpR3YuVnZ")) +".html "+ "flag is not here")
 			}
 		}
-    </script>
